@@ -12,7 +12,7 @@ $ npm install -g is-trademarked-cli
 
 ## Usage
 
-```js
+```bash
 $ is-trademarked github
 GITHUB is a trademark reg in 2010
 Computer services, namely, hosting and maintaining an on-line web site for others to collaboratively develop software; Hosting an on-line community web site featuring a distributed control system for the collaborative development of software
