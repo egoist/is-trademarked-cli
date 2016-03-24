@@ -1,0 +1,42 @@
+{
+  "name": "is-trademarked-cli",
+  "version": "0.0.0",
+  "description": "CLI tool to check if a word is trademarked.",
+  "license": "MIT",
+  "repository": "egoist/is-trademarked-cli",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "bin": {
+    "is-trademarked": "cli.js"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "trademarked"
+  ],
+  "devDependencies": {
+    "ava": "latest",
+    "execa": "^0.2.2",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "dependencies": {
+    "is-trademarked": "^1.0.0",
+    "log-symbols": "^1.0.2",
+    "meow": "^3.7.0",
+    "ora": "^0.2.0"
+  }
+}
