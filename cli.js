@@ -41,4 +41,5 @@ isTrademarked(word)
   .catch(e => {
     spinner.stop()
     console.log(e.stack)
+    process.exit(1)
   })
