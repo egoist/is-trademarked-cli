@@ -18,7 +18,8 @@ const cli = meow(`
   alias: {
     v: 'version',
     h: 'help'
-  }
+  },
+  string: ['_']
 })
 
 const word = cli.input[0]
