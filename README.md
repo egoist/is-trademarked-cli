@@ -2,7 +2,7 @@
 
 > CLI tool to check if a word is trademarked.
 
-![preview](https://ooo.0o0.ooo/2016/03/24/56f3ee428fef3.png)
+![preview](https://ooo.0o0.ooo/2016/03/24/56f3f232ebe57.png)
 
 ## Install
 
