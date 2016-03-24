@@ -4,6 +4,7 @@ const meow = require('meow')
 const ora = require('ora')
 const isTrademarked = require('is-trademarked')
 const logSymbols = require('log-symbols')
+const chalk = require('chalk')
 
 const spinner = ora()
 
@@ -22,7 +23,7 @@ const cli = meow(`
   string: ['_']
 })
 
-const word = cli.input[0]
+const word = cli.input.join(' ')
 
 if (!word) {
   console.error('A word is required')
@@ -31,13 +32,17 @@ if (!word) {
 
 spinner.start()
 isTrademarked(word)
-  .then(trademarked => {
+  .then(trademarkes => {
     spinner.stop()
-    console.log(
-      trademarked ?
-      `${logSymbols.error} ${word} is a trademark` :
-      `${logSymbols.success} ${word} is available`
-    )
+    if (!trademarkes) {
+      return console.log(`${logSymbols.success} ${word} is available`)
+    }
+    trademarkes.forEach(t => {
+      console.log(
+        `${chalk.cyan(t.wordmark)} is a trademark reg in ${t.reg.getFullYear()}\n` +
+        chalk.gray(t.description)
+      )
+    })
   })
   .catch(e => {
     spinner.stop()

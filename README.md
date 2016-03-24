@@ -2,6 +2,8 @@
 
 > CLI tool to check if a word is trademarked.
 
+![preview](https://ooo.0o0.ooo/2016/03/24/56f3ee428fef3.png)
+
 ## Install
 
 ```bash
@@ -11,14 +13,21 @@ $ npm install -g is-trademarked-cli
 ## Usage
 
 ```js
-$ is-trademarked apple
-✖ apple is a trademark
-
-$ is-trademarked kik
-✖ kik is a trademark
+$ is-trademarked github
+GITHUB is a trademark reg in 2010
+Computer services, namely, hosting and maintaining an on-line web site for others to collaboratively develop software; Hosting an on-line community web site featuring a distributed control system for the collaborative development of software
 
 $ is-trademarked unicorns
 ✔ unicorns is available
+
+# wildcard
+$ is-trademarked "macbook*"
+MACBOOK is a trademark reg in 2007
+Computers, notebook computers, computer hardware, computer operating system software, computer peripherals
+MACBOOK AIR is a trademark reg in 2008
+computers, notebook computers, computer hardware, computer operating system software, computer peripherals
+MACBOOK PRO is a trademark reg in 2012
+Computers; notebook computers; computer hardware; computer operating system software; electrical power adaptors; electrical power cords; computer batteries; remote controls for use with computers; cables and connectors for use with computers and computer peripherals; downloadable electronic publications in the nature of instruction manuals in the field of computers, notebook computers, computer hardware, computer operating system software, computer batteries and other computer accessories and peripherals
 ```
 
 ## Related
