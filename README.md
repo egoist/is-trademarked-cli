@@ -13,6 +13,12 @@ $ npm install -g is-trademarked-cli
 ```js
 $ is-trademarked apple
 ✖ apple is trademarked
+
+$ is-trademarked kik
+✖ kik is a trademark
+
+$ is-trademarked unicorns
+✔ unicorns is available
 ```
 
 ## Related
