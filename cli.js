@@ -5,8 +5,7 @@ const ora = require('ora')
 const isTrademarked = require('is-trademarked')
 const logSymbols = require('log-symbols')
 const chalk = require('chalk')
-
-const spinner = ora()
+const updateNotifier = require('update-notifier')
 
 const cli = meow(`
   Usage:
@@ -23,6 +22,8 @@ const cli = meow(`
   string: ['_']
 })
 
+updateNotifier({pkg: cli.pkg}).notify()
+
 const word = cli.input.join(' ')
 
 if (!word) {
@@ -30,7 +31,9 @@ if (!word) {
   process.exit(1)
 }
 
+const spinner = ora()
 spinner.start()
+
 isTrademarked(word)
   .then(trademarks => {
     spinner.stop()

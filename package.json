@@ -38,6 +38,7 @@
     "is-trademarked": "^1.1.0",
     "log-symbols": "^1.0.2",
     "meow": "^3.7.0",
-    "ora": "^0.2.0"
+    "ora": "^0.2.0",
+    "update-notifier": "^0.6.3"
   }
 }
