@@ -32,12 +32,12 @@ if (!word) {
 
 spinner.start()
 isTrademarked(word)
-  .then(trademarkes => {
+  .then(trademarks => {
     spinner.stop()
-    if (!trademarkes) {
+    if (!trademarks) {
       return console.log(`${logSymbols.success} ${word} is available`)
     }
-    trademarkes.forEach(t => {
+    trademarks.forEach(t => {
       console.log(
         `${chalk.cyan(t.wordmark)} is a trademark reg in ${t.reg.getFullYear()}\n` +
         chalk.gray(t.description)
