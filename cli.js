@@ -13,6 +13,7 @@ const cli = meow(`
 
     is-trademarked <word>
 
+    -t/--token      Use your own API token
     -v/--version    Print version
     -h/--help       Print help
 `, {
