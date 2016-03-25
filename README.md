@@ -13,9 +13,9 @@ $ npm install -g is-trademarked-cli
 ## Usage
 
 ```bash
-$ is-trademarked github
-GITHUB is a trademark reg in 2010
-Computer services, namely, hosting and maintaining an on-line web site for others to collaboratively develop software; Hosting an on-line community web site featuring a distributed control system for the collaborative development of software
+$ is-trademarked kik
+KIK is a trademark reg in 2009
+Light duty polyurethane tires
 
 $ is-trademarked unicorns
 ✔ unicorns is available
