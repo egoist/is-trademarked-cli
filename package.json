@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "chalk": "^1.1.1",
+    "configstore": "^2.0.0",
     "is-trademarked": "^1.2.0",
     "log-symbols": "^1.0.2",
     "meow": "^3.7.0",
