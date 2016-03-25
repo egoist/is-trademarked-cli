@@ -6,6 +6,7 @@ const isTrademarked = require('is-trademarked')
 const logSymbols = require('log-symbols')
 const chalk = require('chalk')
 const updateNotifier = require('update-notifier')
+const token = require('./lib/token')
 
 const cli = meow(`
   Usage:
@@ -17,12 +18,18 @@ const cli = meow(`
 `, {
   alias: {
     v: 'version',
-    h: 'help'
+    h: 'help',
+    t: 'token'
   },
   string: ['_']
 })
 
 updateNotifier({pkg: cli.pkg}).notify()
+
+if (cli.flags.token) {
+  token.set(cli.flags.token)
+  return
+}
 
 const word = cli.input.join(' ')
 
@@ -34,11 +41,12 @@ if (!word) {
 const spinner = ora()
 spinner.start()
 
-isTrademarked(word)
+isTrademarked(word, {token: token.get()})
   .then(trademarks => {
     spinner.stop()
     if (!trademarks) {
-      return console.log(`${logSymbols.success} ${word} is available`)
+      console.log(`${logSymbols.success} ${word} is available`)
+      return
     }
     trademarks.forEach(t => {
       console.log(

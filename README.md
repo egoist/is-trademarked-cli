@@ -30,6 +30,15 @@ MACBOOK PRO is a trademark reg in 2012
 Computers; notebook computers; computer hardware; computer operating system software; electrical power adaptors; electrical power cords; computer batteries; remote controls for use with computers; cables and connectors for use with computers and computer peripherals; downloadable electronic publications in the nature of instruction manuals in the field of computers, notebook computers, computer hardware, computer operating system software, computer batteries and other computer accessories and peripherals
 ```
 
+### Your own API token
+
+Since the API has rate-limit, you can supply your own API token. Sign up to [markerapi](http://www.markerapi.com/) to get one for free.
+
+```bash
+# replace with your token
+$ is-trademarked -t yZ32rW4Pq6
+```
+
 ## Related
 
 - [is-trademarked](https://github.com/egoist/is-trademarked) - API of this module
