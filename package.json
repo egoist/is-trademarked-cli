@@ -1,6 +1,6 @@
 {
   "name": "is-trademarked-cli",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "CLI tool to check if a word is trademarked.",
   "license": "MIT",
   "repository": "egoist/is-trademarked-cli",
