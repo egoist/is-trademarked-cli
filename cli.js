@@ -51,7 +51,7 @@ isTrademarked(word, {token: token.get()})
     }
     trademarks.forEach(t => {
       console.log(
-        `${chalk.cyan(t.wordmark)} is a trademark reg in ${t.reg.getFullYear()}\n` +
+        `${chalk.cyan(t.wordmark)} is a trademark registered in ${t.reg.getFullYear()}\n` +
         chalk.gray(t.description)
       )
     })

@@ -42,6 +42,7 @@ $ is-trademarked -t yZ32rW4Pq6
 ## Related
 
 - [is-trademarked](https://github.com/egoist/is-trademarked) - API of this module
+- [canibekiked](https://github.com/parro-it/canibekiked) - Tool to check if any of your NPM repositories name is trademarked
 
 ## License
 
